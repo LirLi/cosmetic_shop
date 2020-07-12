@@ -69,16 +69,31 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
+  min-width: 320px;
   background-color: #F8F8F6;
 }
 
 .header__menu-btn {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 22px;
+  height: 22px;
   margin-right: 20px;
-  width: 0;
-  height: 0;
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+.header__menu-btn:hover {
+  opacity: 0.5;
+}
+
+.header__menu-btn--opened {
+  background-image: url("/images/svg/close_icon.svg");
+}
+
+.header__menu-btn--closed {
+  background-image: url("/images/svg/menu_icon.svg");
 }
 
 .header__wrap {
@@ -97,6 +112,14 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   height: 13px;
 }
 
+.header__logo svg:hover {
+  opacity: 0.5;
+}
+
+.header__user-nav-link:hover {
+  opacity: 0.5;
+}
+
 .header__user-nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,8 +134,12 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   margin-right: 0px;
 }
 
+.main-nav__link:hover {
+  opacity: 0.5;
+}
+
 .main-nav {
-  font-family: "raleway", "arial";
+  font-family: "raleway-500", "arial";
   font-style: normal;
   font-size: 28px;
   line-height: 130%;
@@ -128,5 +155,40 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .main-nav__item:last-child {
   margin-bottom: 0px;
+}
+
+.main-nav--opened {
+  display: block;
+}
+
+.main-nav--closed {
+  display: none;
+}
+
+.social {
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social__link:hover {
+  opacity: 0.5;
+}
+
+.social__item {
+  margin-right: 30px;
+}
+
+.social__item:last-child {
+  margin-right: 0px;
+}
+
+.main-nav__social-list {
+  padding-left: 15px;
+  padding-bottom: 51px;
 }
 /*# sourceMappingURL=style.css.map */
