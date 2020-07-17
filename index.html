@@ -9,16 +9,12 @@
 <body>
 
    <header class="header">
-    
-      <div class="header__wrap">
+      <div class="header__wrap header__wrap--opened header__wrap--closed">
      <button class="header__menu-btn header__menu-btn--opened header__menu-btn--closed  main-nav__toggle">
-       <!-- <svg class="header__menu-btn--close" width="16" height="16">
-            <use xlink:href="images/sprite.svg#close"></use>
-         </svg> -->
       </button>
       <a class="header__logo" href="#">
          <svg class="header__logo">
-            <use xlink:href="images/sprite.svg#logo"></use>
+            <use xlink:href="./images/sprite.svg#logo"></use>
          </svg>
       </a>
       <ul class="header__user-nav-list">
@@ -85,35 +81,289 @@
             <p class="about__text">Натуральная косметика для бережного ухода за кожей</p>
             <a  class="about__btn btn" href="#">Подробнее</a>
          </div>
+         <div class="about__promocard-wrapper">
          <a class="about__promocard" href="">
             <picture>
-               <source media="(min-width: 1199px)" srcset="/images/header_careF_desc.png">
-               <source media="(min-width: 767px)" srcset="/images/header_careF_tab.png">  
-               <img class="about__promocard-img" src="/images/header_careF_mob.png" alt="care_face">
+               <source media="(min-width: 1199px)" srcset="./images/header_careF_desc.png">
+               <source media="(min-width: 767px)" srcset="./images/header_careF_tab.png">  
+               <img class="about__promocard-img" src="./images/header_careF_mob.png" alt="care_face">
             </picture>
             <div class="about__promotext">
             <p>Уход для лица </p>
-            <svg>
-               <use xlink:href="images/sprite.svg#next"></use>
+            <svg width="24" height="12">
+               <use xlink:href="./images/sprite.svg#next"></use>
             </svg>
          </div>
          </a>
          <a class="about__promocard" href="">
             <picture>
-               <source media="(min-width: 1199px)" srcset="/images/header_careB_desc.png">
-               <source media="(min-width: 767px)" srcset="/images/header_careB_tab.png">  
-               <img class="about__promocard-img" src="/images/header_careB_mob.png" alt="care_body">
+               <source media="(min-width: 1199px)" srcset="./images/header_careB_desc.png">
+               <source media="(min-width: 767px)" srcset="./images/header_careB_tab.png">  
+               <img class="about__promocard-img" src="./images/header_careB_mob.png" alt="care_body">
             </picture>
             <div class="about__promotext">
             <p>Уход для тела</p>
-            <svg>
-               <use xlink:href="images/sprite.svg#next"></use>
+            <svg width="24" height="12">
+               <use xlink:href="./images/sprite.svg#next"></use>
             </svg>
          </div>
          </a>
       </div>
-      
+      </div>
    </section>
+
+   <section class="bestseller">
+      <div class="bestseller-wrap">
+      <div class="bestseller__content">
+      <h2 class="section__title bestseller__title">Бестселлеры</h2>
+      <p class="section__text bestseller__text">Легендарные продукты,
+         завоевавшие любовь
+         наших клиентов</p>
+         <a class="btn bestseller__btn-more bestseller__btn-desc" href="">Смотреть все</a>
+      </div>
+      <div class="slider-wrap">
+      <ul class="slider slider__list bestseller__slider">
+         <li class="slider__slide slide card">
+            <picture>
+               <source media="(min-width: 767px)" srcset="./images/bestseller_tab.png"  >
+               <img src="./images/bestseller_mob.jpg" alt="card">
+            </picture>
+            <div class="slide__info">
+          <h3 class="slide__title card__title">High</h3> 
+          <span class="slide__text card__text">крем для лица</span>
+          <a href="" class="slide__link card__link">Подробнее</a>
+            </div>
+         </li>
+         <li class="slider__slide slide card">
+            <picture>
+               <source media="(min-width: 767px)" srcset="./images/bestseller_desc2.jpg"  >
+               <img src="./images/bestseller_mob2.jpg" alt="card">
+            </picture>
+         <div class="slide__info">
+          <h3 class="slide__title card__title">Rest</h3> 
+          <span class="slide__text card__text">минеральная пудра</span>
+          <a href="" class="slide__link card__link">Подробнее</a>
+         </div>
+         </li>
+         <li class="slider__slide slide card">
+            <picture>
+               <source media="(min-width: 767px)" srcset="./images/bestseller_tab.png"  >
+               <img src="./images/bestseller_mob.jpg" alt="card">
+            </picture>
+            <div class="slide__info">
+          <h3 class="slide__title card__title">High</h3> 
+          <span class="slide__text card__text">крем для лица</span>
+          <a href="" class="slide__link card__link">Подробнее</a>
+            </div>
+         </li>
+      </ul>
+      <div class="slider-pagination arrow-pagination">
+         <button>
+            <svg width="24" height="12">
+               <use xlink:href="./images/sprite.svg#next"></use>
+            </svg>
+         </button>
+         <button><svg width="24" height="12">
+            <use xlink:href="./images/sprite.svg#prev"></use>
+         </svg></button>
+      </div>
+   </div>
+      <a class="btn bestseller__btn-more bestseller__btn-mobile" href="">Смотреть все</a>
+   </div>
+   </section>
+
+   <section class="new-collection">
+      <div class="new-collection__content">
+         <h2 class="new-collection__title section__title">Встречайте весну
+            вместе с нами</h2>
+         <p class="new-collection__text section__text">Попробуйте новую коллекцию
+               ухаживающих средств для лица
+               с SPF защитой</p>
+         <a class="btn new-collection__btn" href="">Подробнее</a>
+      </div>
+   </section>
+   <section class="care">
+      <div class="container">
+         <div class="care__content-wrap">
+            <div class="care__content">
+               <h2 class="care__title section__title">Индивидуальный
+                  уход</h2>
+                  <p class="care__text section__text">Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая ваш образ жизни, место жительства и другие факторы. </p>
+                  <a class="btn care__btn" href="">Заполнить анкету</a>
+               </div>
+            </div>
+            <div class="care__img">
+               <picture>
+                  <source media="(min-width:1199px)" srcset="./images/individualCare_desc.jpg">
+                  <source media="(min-width:767px)" srcset="./images/individualCare_tab.jpg">
+                  <img class="care__img-img"src="./images/individualCare_mob.jpg" alt="individualCare">
+               </picture>
+            </div>
+         
+      </div>
+   </section>
+   <section class="history">
+      <div class="history__content">
+         <p class="history__text">“Мы стремимся сделать уход за кожей
+            доступным и приятным ритуалом для всех,
+            кто хочет заботиться
+            о себе и своем теле”  </p>
+            <a class="btn history__btn" href="">Наша история</a>
+      </div>
+   </section>
+
+   <section class="join">
+      <div class="container">
+         <div class="join__content">
+            <h2 class="join__title section__title">Присоединяйтесь
+               к нам</h2>
+               <p class="join__text section__text">Подпишитесь на наш аккаунт
+                  @marooncare и узнавайте
+                  о новиках и акциях первыми</p>
+               <a class="btn join__btn" href="">Подписаться</a>
+         </div>
+         <div class="join__gallery">
+            <picture>
+               <img class="join__gallery-img join__gallery-img--desc" src="./images/join_desc5.jpg" alt="картинка">
+            </picture>
+            <picture>
+               <img class="join__gallery-img join__gallery-img--desc" src="./images/join_desc6.jpg" alt="картинка">
+            </picture>
+
+            <picture>
+               <source media="(min-width: 1199px)" srcset="./images/join_desc1.jpg"> 
+               <source media="(min-width: 767px)" srcset="./images/join_tab1.jpg"> 
+               <img class="join__gallery-img--mob" src="./images/join_mob1.jpg" alt="картинка">
+            </picture>
+
+            <picture>
+               <source media="(min-width: 1199px)" srcset="./images/join_desc2.jpg"> 
+               <source media="(min-width: 767px)" srcset="./images/join_tab2.jpg"> 
+               <img class="join__gallery-img--mob" src="./images/join_mob2.jpg" alt="картинка">
+            </picture>
+
+            <picture>
+               <source media="(min-width: 1199px)" srcset="./images/join_desc3.jpg"> 
+               <source media="(min-width: 767px)" srcset="./images/join_tab3.jpg"> 
+               <img class="join__gallery-img--mob" src="./images/join_mob3.jpg" alt="картинка">
+            </picture>
+
+            <picture>
+               <source media="(min-width: 1199px)" srcset="./images/join_desc4.jpg"> 
+               <source media="(min-width: 767px)" srcset="./images/join_tab4.jpg"> 
+               <img class="join__gallery-img--mob" src="./images/join_mob4.jpg" alt="картинка">
+            </picture>
+         </div>
+      </div>
+   </section>
+
+   <section class="contacts">
+      <div class="container">
+      <div class="contacts__content-wrap">
+      <h2 class="contacts__title">Контакты</h2>
+      <div class="contacts__addres">
+         <p class="contacts__bold-title">Адрес</p>
+         <p class="contacts__text">Санкт-Петербург,<br> пл. Восстания, 19</p>
+      </div>
+      <div class="contacts__tel">
+         <p class="contacts__bold-title">Телефон</p>
+         <a class="contacts__text contacts__link" href="tel:+79236555506">+7 (923) 655-55-06 </a>
+      </div>
+      <div class="contacts__email">
+         <p class="contacts__bold-title">E-mail</p>
+         <a class="contacts__text contacts__link" href="mailto:info@maroon.ru">info@maroon.ru </a>
+      </div>
+      <ul class="contacts__social-list social">
+         <li class="social__item">
+            <a href="" class="social__link">
+               <svg class="social__icon social__icon--fb" width="11" height="18">
+                  <use xlink:href="images/sprite.svg#fb"></use>
+               </svg>
+            </a>
+         </li>
+         <li class="social__item">
+            <a href="" class="social__link">
+               <svg class="social__icon ocial__icon--inst"width="20" height="20">
+                  <use xlink:href="images/sprite.svg#inst"></use>
+               </svg>
+            </a>
+         </li>
+         <li class="social__item">
+            <a href="" class="social__link">
+               <svg class="social__icon ocial__icon--tw" width="20" height="17">
+                  <use xlink:href="images/sprite.svg#tw"></use>
+               </svg>
+            </a>
+         </li>
+      </ul>
+   </div>
+      <div class="contacts__map-wrap">
+         <a href="https://yandex.ru/maps/?um=constructor%3Abd46341d8b2ffe5dab3250fbc7c1f67252fd5bf0028144529c2a8fcef940592b&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Abd46341d8b2ffe5dab3250fbc7c1f67252fd5bf0028144529c2a8fcef940592b&amp;width=500&amp;height=400&amp;lang=ru_RU" alt="" style="border: 0; width: 100%; height:auto;" /></a>
+      </div>
+   </div>
+   </section>
+
+   <footer class="footer">
+      <div class="footer__nav">
+         <a class="footer__logo" href="">
+            <svg class="footer__logo" widht="14" height="14">
+               <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg>
+         </a>
+
+         <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+               <a class="footer__nav-link" href="">Каталог</a>
+            </li>
+            <li class="footer__nav-item">
+               <a class="footer__nav-link" href="">О нас</a>
+            </li>
+            <li class="footer__nav-item">
+               <a class="footer__nav-link" href="">Магазины</a>
+            </li>
+            <li class="footer__nav-item">
+               <a class="footer__nav-link" href="">Контакты</a>
+            </li>
+            
+         </ul>
+
+         <ul class="footer__social-list social">
+            <li class="social__item">
+               <a href="" class="social__link">
+                  <svg class="social__icon social__icon--fb" width="11" height="18">
+                     <use xlink:href="images/sprite.svg#fb"></use>
+                  </svg>
+               </a>
+            </li>
+            <li class="social__item">
+               <a href="" class="social__link">
+                  <svg class="social__icon ocial__icon--inst"width="20" height="20">
+                     <use xlink:href="images/sprite.svg#inst"></use>
+                  </svg>
+               </a>
+            </li>
+            <li class="social__item">
+               <a href="" class="social__link">
+                  <svg class="social__icon ocial__icon--tw" width="20" height="17">
+                     <use xlink:href="images/sprite.svg#tw"></use>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer__copyright">
+         <div class="footer__copyright-info">
+            <a class="footer__copyright-logo">Maroon</a>
+            <svg class="footer__copyright-icon"  width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M7 0C10.864 0 14 3.136 14 7C14 10.864 10.864 14 7 14C3.136 14 0 10.864 0 7C0 3.136 3.136 0 7 0ZM7 1.4C3.906 1.4 1.4 3.906 1.4 7C1.4 10.094 3.906 12.6 7 12.6C10.094 12.6 12.6 10.094 12.6 7C12.6 3.906 10.094 1.4 7 1.4ZM7 3.5C8.274 3.5 9.3891 4.1811 10.0016 5.1996L8.8018 5.9199C8.61298 5.60507 8.34493 5.34524 8.02438 5.16631C7.70382 4.98739 7.34196 4.89562 6.97488 4.90016C6.6078 4.9047 6.24832 5.00539 5.93229 5.19219C5.61626 5.379 5.35472 5.64538 5.17375 5.96479C4.99278 6.28419 4.8987 6.64546 4.9009 7.01256C4.90309 7.37966 5.00149 7.73978 5.18626 8.057C5.37104 8.37421 5.63575 8.63745 5.95399 8.82046C6.27223 9.00347 6.63289 9.09985 7 9.1C7.36269 9.10024 7.71926 9.00647 8.03492 8.82785C8.35057 8.64922 8.61455 8.39184 8.8011 8.0808L10.0016 8.8004C9.60821 9.45743 9.01015 9.96728 8.29915 10.2517C7.58814 10.5362 6.80345 10.5796 6.06543 10.3752C5.32741 10.1708 4.6768 9.73001 4.2134 9.12033C3.74999 8.51066 3.49938 7.7658 3.5 7C3.5 5.068 5.068 3.5 7 3.5Z" fill="#CDCDCD"/>
+               </svg>
+               <p class="footer__copyright-text footer__year">2020 Все права защищены</p>
+         </div>
+         <a href="" class="footer__copyright-policy">Политика конфиденциальности</a>
+
+      </div>
+   </footer>
+   
    <script src="/js/main.js"></script>
 </body>
 </html>
