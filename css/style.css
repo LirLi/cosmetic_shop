@@ -127,11 +127,15 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .header__menu-btn--opened {
-  background-image: url("/images/svg/close_icon.svg");
+  background-image: url("./images/svg/menu_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__menu-btn--closed {
-  background-image: url("/images/svg/menu_icon.svg");
+  background-image: url("./images/svg/menu_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__wrap {
@@ -246,7 +250,8 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .about {
-  background-image: url("/images/header_bg.png");
+  background-image: url("./images/header_bg.png");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-top: -75px;
@@ -403,7 +408,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .new-collection {
-  background-image: url("/images/springBanner_bg_mob.jpg");
+  background-image: url("./images/springBanner_bg_mob.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -460,7 +465,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .history {
-  background-image: url("/images/history_bg_mob.jpg");
+  background-image: url("./images/history_bg_mob.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;

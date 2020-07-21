@@ -110,11 +110,14 @@ margin-bottom: 40px;
   }
 }
 .header__menu-btn--opened{
-  background-image: url("/images/svg/close_icon.svg");
-  
+  background-image: url("./images/svg/menu_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .header__menu-btn--closed{
-  background-image: url("/images/svg/menu_icon.svg");
+  background-image: url("./images/svg/menu_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__wrap{
@@ -208,7 +211,8 @@ justify-content: space-between;
 }
 
 .about{
-  background-image: url("/images/header_bg.png");
+  background-image: url("./images/header_bg.png");
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-top: -75px;
@@ -329,7 +333,7 @@ text-align: center;
 }
 
 .new-collection{
-  background-image: url("/images/springBanner_bg_mob.jpg");
+  background-image: url("./images/springBanner_bg_mob.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -370,7 +374,7 @@ text-align: center;
   width: 250px;
 }
 .history{
-  background-image: url("/images/history_bg_mob.jpg");
+  background-image: url("./images/history_bg_mob.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
