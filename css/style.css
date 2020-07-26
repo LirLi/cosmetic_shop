@@ -676,7 +676,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 767px) {
   .new-collection {
-    background-image: url("/images/springBanner_bg_tab.png");
+    background-image: url("../images/springBanner_bg_tab.png");
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -688,7 +688,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1199px) {
   .new-collection {
-    background-image: url("/images/springBanner_bg_desc.png");
+    background-image: url("../images/springBanner_bg_desc.png");
   }
 }
 

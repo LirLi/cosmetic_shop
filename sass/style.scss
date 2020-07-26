@@ -491,12 +491,12 @@ text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   @media (min-width: $tablet-width){
-    background-image: url("/images/springBanner_bg_tab.png");
+    background-image: url("../images/springBanner_bg_tab.png");
     display: flex;
     justify-content: flex-end;
   }
   @media (min-width: $desctop-width){
-    background-image: url("/images/springBanner_bg_desc.png");
+    background-image: url("../images/springBanner_bg_desc.png");
   }
 }
 .new-collection__content{
