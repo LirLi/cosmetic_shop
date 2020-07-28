@@ -75,63 +75,70 @@
    <main>
       <section class="catalog">
          <div class="container">
+            <div class="catalog__filter-wrap catalog__filter-forEvents catalog__filter--closed ">
             <div class="catalog__header">
                <h1 class="catalog__title"> Каталог </h1>
-               <button class="btn catalog__bth catalog__bth--opened">Фильтр </button>
-               <button class="btn catalog__bth catalog__bth--closed">x </button>
+               <button class="btn catalog__bth catalog__btn--filter">Фильтр </button>
+               <button class="btn catalog__bth catalog__btn--cross"></button>
             </div>
+            <div class="filter__wrap filter__closed">
             <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
                <div class="filter__inner">
-                 
+               <div class="filter__item-inner">
                   <div class="filter__item-title face-care accordion-title">
-                     <button class="filter__accordion-btn" type="button">Уход для лица <span class="filter__item-icon"></span></button>
+                     <button class="filter__accordion-btn filter__accordion-btn--opened" type="button">Уход для лица </button>
                   </div>
                
-                  <div class="filter__content accordion__content">
+                  <div class="filter__content accordion__content accordion__content--opened">
                      <ul class="filter__list filter__list--face">
                         <li class="filter__item">
-                           <input class="hidden" type="checkbox" id="cream0" name="faceCare" value="cream">
+                           <input class="hidden filter__input" type="checkbox" id="cream0" name="faceCare" value="cream">
                            <label class="filter__label--checkbox" for="cream0">Крема</label>
                         </li>
                         <li class="filter__item">
-                           <input class="hidden" type="checkbox" id="mask1" name="faceCare" value="mask">
+                           <input class="hidden filter__input" type="checkbox" id="mask1" name="faceCare" value="mask">
                            <label class="filter__label--checkbox" for="mask1">Маски</label>
                         </li>
                         <li class="filter__item">
-                           <input class="hidden" type="checkbox" id="powder2" name="faceCare" value="powder">
+                           <input class="hidden filter__input" type="checkbox" id="powder2" name="faceCare" value="powder">
                            <label class="filter__label--checkbox" for="powder2">Пудра</label>
                         </li>
                      </ul>
                   </div>
-
+               </div>
+                 
+               <div class="filter__item-inner">     
                   <div class="filter__item-title body-care accordion-title">
-                     <button class="filter__accordion-btn" type="button">Уход для тела<span class="filter__item-icon"></span></button>
+                     <button class="filter__accordion-btn filter__accordion-btn--closed" type="button">Уход для тела<span class="filter__item-icon"></span></button>
                   </div>
 
                   <div class="filter__content accordion__content">
                      <ul class="filter__list filter__list--body">
                         <li class="filter__item">
-                           <input class="hidden" type="checkbox" id="creamBody0" name="BodyCare" value="cream">
+                           <input class="hidden filter__input" type="checkbox" id="creamBody0" name="BodyCare" value="cream">
                            <label class="filter__label--checkbox" for="creamBody0">Крема</label>
                         </li>
                         <li class="filter__item">
-                           <input class="hidden" type="checkbox" id="scrub1" name="BodyCare" value="scrub">
+                           <input class="hidden filter__input" type="checkbox" id="scrub1" name="BodyCare" value="scrub">
                            <label class="filter__label--checkbox" for="scrub1">Скраб</label>
                         </li>
                         <li class="filter__item">
-                           <input class="hidden" type="checkbox" id="masc2" name="BodyCare" value="masc">
+                           <input class="hidden filter__input" type="checkbox" id="masc2" name="BodyCare" value="masc">
                            <label class="filter__label--checkbox" for="masc2">Маски</label>
                         </li>
                      </ul>
                   </div>
+               </div>
 
                   <div class="filter__btn-inner">
-                     <button class="btn btn__submit" type="submit">Применить </button>
-                     <button class="btn btn__reset" type="reset">Сброить </button>
+                     <button class="btn btn__submit filter__btn" type="submit">Применить </button>
+                     <button class="btn btn__reset filter__btn" type="reset">Сброить </button>
                   </div>
 
                </div>
             </form>
+            </div>
+            </div>
 
             <div class="catalog__inner">
                <div class="catalog__list-inner">

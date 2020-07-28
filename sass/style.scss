@@ -853,3 +853,135 @@ line-height: 140%;
 .footer__copyright-text{
   width: 156px;
 }
+
+// Catalog
+
+.catalog__header{
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.catalog__bth{
+  background-color: transparent;
+}
+// .catalog__btn--closed{
+//   display:none;
+// }
+
+.catalog__btn--cross{
+  border: none;
+  background-image: url("/images/svg/cross.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  padding: 10px;
+}
+.catalog__btn--hidden{
+  display:none;
+}
+.catalog__btn--show{
+  display: block;
+}
+.filter__inner{
+  padding: 0 20px 60px 20px;
+}
+.filter__item-inner{
+  margin-bottom: 40px;
+}
+.filter__closed{
+  display: none;
+}
+.filter__opened{
+  display: block;
+}
+.catalog__title{
+  font-family:"raleway-500";
+  font-weight: 500;
+font-size: 28px;
+line-height: 130%;
+align-self: center;
+}
+.filter__accordion-btn{
+background-color: transparent;
+border: none;
+outline: none;
+}
+.filter__accordion-btn{
+  font-family:"m-plus-1p-500";
+  font-size: 18px;
+line-height: 140%;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 15px;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/svg/minus.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: 90%;
+    top:25%;
+  }
+}
+.filter__item-title{
+  border-bottom: 1px solid #DBDCE0; ;
+}
+
+.filter__list{
+  padding: 20px 0 0 0 ;
+}
+.filter__item{
+  margin-bottom: 20px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+.hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.filter__label--checkbox{
+  position: relative;
+  padding-left: 25px;
+  color: #9A9DA0;
+  font-size: 16px;
+line-height: 140%;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #CDCDCD;;
+    border-radius: 50%;
+    left: 1%;
+    bottom: 15%;
+    
+  }
+}
+.filter__input:checked + .filter__label--checkbox{
+  color: #122947;
+}
+.filter__input:checked + .filter__label--checkbox::after{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #CDCDCD;
+  background-color: #000;
+  top:21%;
+  left: 4%;
+}
+.filter__btn{
+  padding: 10px 0;
+  width: 115px;
+}
+.filter__btn-inner{
+  display: flex;
+  justify-content: space-between;
+}
