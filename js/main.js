@@ -33,12 +33,10 @@ navToggle.addEventListener('click', function () {
 
 // Фильтр
 
-let catalogFilterEvents = document.querySelector('.catalog__filter-forEvents')
-
+let catalogFilterEvents = document.querySelector('.catalog__header')
 let catalogBtn = document.querySelector('.catalog__bth')
 let catalogBtnClosed = document.querySelector('.catalog__btn--filter')
 let catalogBtnOpened = document.querySelector('.catalog__btn--cross')
-
 let catalogFilterToggle = document.querySelector('.filter__wrap');
 
 catalogFilterEvents.addEventListener('click', function () {
@@ -68,56 +66,23 @@ catalogFilterEvents.addEventListener('click', function () {
 if (catalogFilterToggle.classList.contains('filter__closed')) {
   catalogBtnOpened.classList.add('catalog__btn--hidden');
 }
-// else {
-//   catalogBtnClosed.classList.add('catalog__btn--show');
-// }
 
-// let catalogFilterClosed =  document.querySelector('.')
+// Аккордеон
+let acc = document.getElementsByClassName("filter__accordion-btn");
+let i;
 
-// catalogBtn.addEventListener('click', changeBtnOpen);
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("filter__accordion-btn--opened");
 
-// function changeBtnOpen() {
-//   catalogBtn.classList.add('catalog__btn--hidden')
-// }
-// if (changeBtnOpen) {
-//   catalogBtnOpened.classList.add('catalog__btn--hidden');
-// } 
-// catalogBtn.addEventListener('click', changeBtnClose);
-
-// function changeBtnClose() {
-  
-// }
-
-// else {
-//   catalogBtnOpened.classList.add('catalog__btn--show');
-// }
-
-// catalogFilterEvents.addEventListener('click', catalogFilterOpen);
-
-// function catalogFilterOpen() {
-//   catalogFilterOpened.classList.remove('filter__closed');
-// }
-
-// catalogFilterEvents.addEventListener('click', catalogFilterClose);
-
-// function catalogFilterClose{
-//   catalogFilterOpened.classList.add('filter__closed');
-// }
-
-
-// catalogFilterEvents.addEventListener('click', catalogFilterCloded);
-
-// function catalogFilterCloded() {
-//   catalogFilterOpened.classList.add('filter__closed');
-// }
-
-// catalogFilterEvents.addEventListener('click', changeBtn);
-
-// function changeBtn(){
-//   catalogBtn.classList.add('catalog__btn--closed');
-// }
-
-// if (catalogBtn.contains('catalog__btn--closed')) {
-//   catalogBtn.remove('catalog__btn--closed');
-// }
-
+        /* Toggle between hiding and showing the active panel */
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}

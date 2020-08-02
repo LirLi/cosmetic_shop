@@ -900,6 +900,9 @@ font-size: 28px;
 line-height: 130%;
 align-self: center;
 }
+.filter__content{
+  display: none;
+}
 .filter__accordion-btn{
 background-color: transparent;
 border: none;
@@ -924,6 +927,9 @@ line-height: 140%;
     left: 90%;
     top:25%;
   }
+}
+.filter__accordion-btn--opened{
+  background-color: grey;
 }
 .filter__item-title{
   border-bottom: 1px solid #DBDCE0; ;

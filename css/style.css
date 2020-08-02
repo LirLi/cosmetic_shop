@@ -1271,6 +1271,10 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
       align-self: center;
 }
 
+.filter__content {
+  display: none;
+}
+
 .filter__accordion-btn {
   background-color: transparent;
   border: none;
@@ -1297,6 +1301,10 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   left: 90%;
   top: 25%;
+}
+
+.filter__accordion-btn--opened {
+  background-color: grey;
 }
 
 .filter__item-title {
