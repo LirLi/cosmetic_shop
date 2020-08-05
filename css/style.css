@@ -1279,6 +1279,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   border: none;
   outline: none;
+  border-bottom: 1px solid #DBDCE0;
 }
 
 .filter__accordion-btn {
@@ -1291,7 +1292,19 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   padding-bottom: 15px;
 }
 
-.filter__accordion-btn::before {
+.filter__accordion-btn--opened::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/svg/plus.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  left: 90%;
+  top: 25%;
+}
+
+.filter__accordion-btn--closed::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -1301,14 +1314,6 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   left: 90%;
   top: 25%;
-}
-
-.filter__accordion-btn--opened {
-  background-color: grey;
-}
-
-.filter__item-title {
-  border-bottom: 1px solid #DBDCE0;
 }
 
 .filter__list {
@@ -1371,6 +1376,11 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   width: 115px;
 }
 
+.filter__btn:hover {
+  opacity: 1;
+  border-color: #122947;
+}
+
 .filter__btn-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1378,5 +1388,62 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.catalog__list-inner {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+  position: relative;
+  width: 290px;
+}
+
+.card__link-img {
+  display: block;
+}
+
+.card__info-wrap {
+  width: 290px;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 10%;
+}
+
+.card__info,
+.card__add-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__title {
+  font-family: "raleway-500";
+  font-size: 16px;
+  line-height: 145%;
+  color: #122947;
+}
+
+.card__price {
+  font-family: "m-plus-1p-500";
+  font-size: 13px;
+  line-height: 145%;
+}
+
+.rub-icon svg {
+  width: 7px;
+  height: 9px;
+}
+
+.card__add-info {
+  font-family: "m-plus-1p";
+  font-size: 13px;
+  line-height: 145%;
+  color: #9A9DA0;
 }
 /*# sourceMappingURL=style.css.map */

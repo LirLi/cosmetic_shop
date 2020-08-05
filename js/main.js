@@ -70,19 +70,35 @@ if (catalogFilterToggle.classList.contains('filter__closed')) {
 // Аккордеон
 let acc = document.getElementsByClassName("filter__accordion-btn");
 let i;
+// let accBtn = 
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
         /* Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel */
-        this.classList.toggle("filter__accordion-btn--opened");
+        // this.classList.toggle("filter__accordion-btn--opened"); пока не нужно
 
         /* Toggle between hiding and showing the active panel */
         let panel = this.nextElementSibling;
         if (panel.style.display === "block") {
-            panel.style.display = "none";
+          panel.style.display = "none";
         } else {
-            panel.style.display = "block";
+          panel.style.display = "block";
         }
     });
+}
+
+let acc2 = document.querySelectorAll('.filter__accordion-btn');
+
+// let panel2 = document.querySelector('.filter__content');
+for (let i = 0; i < acc.length; i++){
+acc2.addEventListener("click", function() {
+  if (acc2.classList.contains('filter__accordion-btn--closed')) {
+    acc2.classList.remove('filter__accordion-btn--closed');
+    acc2.classList.add('filter__accordion-btn--opened');
+  } else {
+    acc2.classList.remove('filter__accordion-btn--opened');
+    acc2.classList.add('filter__accordion-btn--closed');
+} 
+})
 }

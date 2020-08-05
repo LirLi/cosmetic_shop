@@ -12,7 +12,7 @@
      <button class="header__menu-btn header__menu-btn--opened header__menu-btn--closed  main-nav__toggle">
       </button>
    </div>
-   <a class="header__logo" href="/index.html">
+   <a class="header__logo" href="./index.html">
       <svg class="header__logo-svg">
          <use xlink:href="./images/sprite.svg#logo"></use>
       </svg>
@@ -86,14 +86,14 @@
                <div class="filter__inner">
                <div class="filter__item-inner">
                   <!-- <div class="filter__item-title face-care accordion-title"> -->
-                     <button class="filter__accordion-btn filter__accordion-btn--opened" type="button">Уход для лица </button>
+                     <button class="filter__accordion-btn filter__accordion-btn--closed" type="button">Уход для лица </button>
                   <!-- </div> -->
                
                   <div class="filter__content accordion__content accordion__content--opened">
                      <ul class="filter__list filter__list--face">
                         <li class="filter__item">
-                           <input class="hidden filter__input" type="checkbox" id="cream0" name="faceCare" value="cream">
-                           <label class="filter__label--checkbox" for="cream0">Крема</label>
+                           <input class="hidden filter__input" type="checkbox" id="cream0" name="faceCare" value="cream" checked>
+                           <label class="filter__label--checkbox" for="cream0" >Крема</label>
                         </li>
                         <li class="filter__item">
                            <input class="hidden filter__input" type="checkbox" id="mask1" name="faceCare" value="mask">
@@ -108,9 +108,9 @@
                </div>
                  
                <div class="filter__item-inner">     
-                  <div class="filter__item-title body-care accordion-title">
-                     <button class="filter__accordion-btn filter__accordion-btn--closed" type="button">Уход для тела<span class="filter__item-icon"></span></button>
-                  </div>
+                  <!-- <div class="filter__item-title body-care accordion-title"> -->
+                     <button class="filter__accordion-btn filter__accordion-btn--closed" type="button">Уход для тела</button>
+                  <!-- </div> -->
 
                   <div class="filter__content accordion__content">
                      <ul class="filter__list filter__list--body">
@@ -144,22 +144,30 @@
                <div class="catalog__list-inner">
                   <ul class="catalog__list" >
                      <li class="catalog__item card">
-                        <a href="">
+                        <a href="card__link-img">
                            <picture>
                               <source media="(min-width: 1199px)" srcset="./images/card_desc1.jpg"> 
                               <source media="(min-width: 767px)" srcset="./images/card_tab1.jpg">  
                               <img class="card-img" src="./images/card_mob1.jpg" alt="card_mob1">
                            </picture>
-                          <div class="card__info">
-                             <h3 class="card__title">High</h3>
-                             <p class="card__price">990</p>
-                          </div>
-
-                          <div class="card__add-info">
-                             <p class="card__description"> крем для лица</p>
-                             <p class="card__size">50 ml</p>
-                          </div>
+                           <div class="card__info-wrap">
+                              <div class="card__info">
+                                 <h3 class="card__title">High</h3>
+                                 <p class="card__price">990 <span class="rub-icon">
+                                  <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                     <path d="M2.12195 17V13.7619H0V12.2143H2.12195V10.0952H0V8.28571H2.12195V0H6.70732C8.8374 0 10.4146 0.420635 11.439 1.26191C12.4797 2.10317 13 3.3254 13 4.92857C13 6.54762 12.439 7.81746 11.3171 8.7381C10.1951 9.64286 8.54471 10.0952 6.36585 10.0952H4.31707V12.2143H8.34146V13.7619H4.31707V17H2.12195ZM4.31707 8.28571H6.04878C7.52845 8.28571 8.6748 8.04762 9.4878 7.57143C10.3171 7.09524 10.7317 6.2381 10.7317 5C10.7317 3.92064 10.3902 3.11905 9.70732 2.59524C9.02439 2.07143 7.95935 1.80952 6.51219 1.80952H4.31707V8.28571Z" fill="#122947"/>
+                                     </svg>                                 
+                                 </span></p>
+                              </div>
+                              <div class="card__add-info">
+                                 <p class="card__description"> крем для лица</p>
+                                 <p class="card__size">50 ml</p>
+                              </div>
+                            </div>
                         </a>
+                       
+                    
+                       
                      </li>
 
                      <li class="catalog__item card">
@@ -169,6 +177,7 @@
                               <source media="(min-width: 767px)" srcset="./images/card_tab2.jpg">  
                               <img class="card-img" src="./images/card_mob2.jpg" alt="card_mob2">
                            </picture>
+                           <div class="card__info-wrap">
                           <div class="card__info">
                              <h3 class="card__title">Name2</h3>
                              <p class="card__price">699</p>
@@ -178,6 +187,7 @@
                              <p class="card__description">скраб для лица</p>
                              <p class="card__size">70 ml</p>
                           </div>
+                        </div>
                         </a>
                      </li>
 
@@ -188,6 +198,7 @@
                               <source media="(min-width: 767px)" srcset="./images/card_tab3.jpg">  
                               <img class="card-img" src="./images/card_mob3.jpg" alt="card_mob3">
                            </picture>
+                        <div class="card__info-wrap">
                           <div class="card__info">
                              <h3 class="card__title">Name3</h3>
                              <p class="card__price">90</p>
@@ -197,6 +208,7 @@
                              <p class="card__description"> крем для лица</p>
                              <p class="card__size">50 ml</p>
                           </div>
+                        </div>
                         </a>
                      </li>
 
@@ -207,6 +219,7 @@
                               <source media="(min-width: 767px)" srcset="./images/card_tab4.jpg">  
                               <img class="card-img" src="./images/card_mob4.jpg" alt="card_mob1">
                            </picture>
+                           <div class="card__info-wrap">
                           <div class="card__info">
                              <h3 class="card__title">Name4</h3>
                              <p class="card__price">1290</p>
@@ -216,6 +229,7 @@
                              <p class="card__description"> крем для лица</p>
                              <p class="card__size">50 ml</p>
                           </div>
+                        </div>
                         </a>
                      </li>
                   </ul>

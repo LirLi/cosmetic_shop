@@ -907,6 +907,7 @@ align-self: center;
 background-color: transparent;
 border: none;
 outline: none;
+border-bottom: 1px solid #DBDCE0; ;
 }
 .filter__accordion-btn{
   font-family:"m-plus-1p-500";
@@ -916,6 +917,22 @@ line-height: 140%;
   width: 100%;
   text-align: left;
   padding-bottom: 15px;
+ 
+}
+.filter__accordion-btn--opened{
+  &::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/svg/plus.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    left: 90%;
+    top:25%;
+  }
+}
+.filter__accordion-btn--closed{
   &::before{
     content: "";
     position: absolute;
@@ -927,13 +944,13 @@ line-height: 140%;
     left: 90%;
     top:25%;
   }
+
+
 }
-.filter__accordion-btn--opened{
-  background-color: grey;
-}
-.filter__item-title{
-  border-bottom: 1px solid #DBDCE0; ;
-}
+
+// .filter__item-title{
+//   border-bottom: 1px solid #DBDCE0; ;
+// }
 
 .filter__list{
   padding: 20px 0 0 0 ;
@@ -986,8 +1003,58 @@ line-height: 140%;
 .filter__btn{
   padding: 10px 0;
   width: 115px;
+  &:hover{
+    opacity: 1;
+    border-color: #122947;  
+  }
 }
 .filter__btn-inner{
   display: flex;
   justify-content: space-between;
+}
+.catalog__list-inner{
+  width: 300px;
+  margin: 0 auto;
+}
+.catalog__item{
+  margin-bottom: 30px;
+  position: relative;
+  width: 290px;
+}
+.card__link-img{
+ display: block;
+ 
+}
+.card__info-wrap{
+  width: 290px;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 10%;
+}
+
+.card__info,
+.card__add-info{
+  display: flex;
+  justify-content: space-between;
+}
+.card__title{
+  font-family:"raleway-500";
+  font-size: 16px;
+line-height: 145%;
+color: #122947;
+}
+.card__price{
+  font-family:"m-plus-1p-500";
+  font-size: 13px;
+line-height: 145%;
+}
+.rub-icon svg {
+  width: 7px;
+  height: 9px;
+}
+.card__add-info{
+  font-family:"m-plus-1p";
+  font-size: 13px;
+line-height: 145%;
+color: #9A9DA0;
 }
