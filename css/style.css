@@ -110,6 +110,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
   padding: 10px 28px;
   color: #122947;
+  text-align: center;
 }
 
 .btn:hover {
@@ -586,6 +587,16 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.bestseller .swiper-container {
+  margin-left: 0;
+  margin-right: 0;
+  overflow: initial;
+}
+
+.bestseller .swiper-slide {
+  max-width: 230px;
+}
+
 .slider__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,7 +614,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 .slide__info {
   position: absolute;
   bottom: 10%;
-  right: 25%;
+  left: 28%;
   margin: 0 auto;
   width: 110px;
   display: -webkit-box;
