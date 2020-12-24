@@ -83,61 +83,121 @@
             </div>
             <div class="filter__wrap filter__closed">
             <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
-               <div class="filter__inner">
-               <div class="filter__item-inner">
-                  <!-- <div class="filter__item-title face-care accordion-title"> -->
-                     <button class="filter__accordion-btn filter__accordion-btn--closed" type="button">Уход для лица </button>
-                  <!-- </div> -->
-               
-                  <div class="filter__content accordion__content accordion__content--opened">
+               <div class="filter__mobile">
+                  <div class="filter__inner">
+                     <div class="filter__item-inner">
+                           <button class="filter__accordion-btn filter__accordion-btn--closed" type="button">Уход для лица </button>
+                        <div class="filter__content accordion__content accordion__content--opened">
+                           <ul class="filter__list filter__list--face">
+                              <li class="filter__item">
+                                 <input class="hidden filter__input" type="checkbox" id="cream0" name="faceCare" value="cream" checked>
+                                 <label class="filter__label--checkbox" for="cream0" >Крема</label>
+                              </li>
+                              <li class="filter__item">
+                                 <input class="hidden filter__input" type="checkbox" id="mask1" name="faceCare" value="mask">
+                                 <label class="filter__label--checkbox" for="mask1">Маски</label>
+                              </li>
+                              <li class="filter__item">
+                                 <input class="hidden filter__input" type="checkbox" id="powder2" name="faceCare" value="powder">
+                                 <label class="filter__label--checkbox" for="powder2">Пудра</label>
+                              </li>
+                           </ul>
+                        </div>    
+                     </div>
+                  
+                     <div class="filter__item-inner">  
+                           
+                        <!-- <div class="filter__item-title body-care accordion-title"> -->
+                           <button class="filter__accordion-btn filter__accordion-btn--closed" type="button">Уход для тела</button>
+                        <!-- </div> -->
+
+                        <div class="filter__content accordion__content">
+                           <ul class="filter__list filter__list--body">
+                              <li class="filter__item">
+                                 <input class="hidden filter__input" type="checkbox" id="creamBody0" name="BodyCare" value="cream">
+                                 <label class="filter__label--checkbox" for="creamBody0">Крема</label>
+                              </li>
+                              <li class="filter__item">
+                                 <input class="hidden filter__input" type="checkbox" id="scrub1" name="BodyCare" value="scrub">
+                                 <label class="filter__label--checkbox" for="scrub1">Скраб</label>
+                              </li>
+                              <li class="filter__item">
+                                 <input class="hidden filter__input" type="checkbox" id="masc2" name="BodyCare" value="masc">
+                                 <label class="filter__label--checkbox" for="masc2">Маски</label>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="filter__desktop">
+                  <div class="filter__item-inner--desktop">
+                     <h4 class="filter__item-title" type="button">Уход для лица </h4>
                      <ul class="filter__list filter__list--face">
                         <li class="filter__item">
-                           <input class="hidden filter__input" type="checkbox" id="cream0" name="faceCare" value="cream" checked>
-                           <label class="filter__label--checkbox" for="cream0" >Крема</label>
+                           <input class="hidden filter__input" type="checkbox" id="l1" name="faceCare" value="cream" checked>
+                           <label class="filter__label--checkbox" for="l1" >Крема</label>
                         </li>
                         <li class="filter__item">
-                           <input class="hidden filter__input" type="checkbox" id="mask1" name="faceCare" value="mask">
-                           <label class="filter__label--checkbox" for="mask1">Маски</label>
+                           <input class="hidden filter__input" type="checkbox" id="l2" name="faceCare" value="mask">
+                           <label class="filter__label--checkbox" for="l2">Маски</label>
                         </li>
                         <li class="filter__item">
-                           <input class="hidden filter__input" type="checkbox" id="powder2" name="faceCare" value="powder">
-                           <label class="filter__label--checkbox" for="powder2">Пудра</label>
+                           <input class="hidden filter__input" type="checkbox" id="l3" name="faceCare" value="powder">
+                           <label class="filter__label--checkbox" for="l3">Пудра</label>
                         </li>
-                     </ul>
+                     </ul>   
+                  </div>
+
+                  <div class="filter__item-inner--desktop">
+                     <h4 class="filter__item-title" type="button">Уход для тела </h4>
+                     <ul class="filter__list filter__list--face">
+                        <li class="filter__item">
+                           <input class="hidden filter__input" type="checkbox" id="r1" name="faceCare" value="cream" checked>
+                           <label class="filter__label--checkbox" for="r1" >Товар1</label>
+                        </li>
+                        <li class="filter__item">
+                           <input class="hidden filter__input" type="checkbox" id="r2" name="faceCare" value="mask">
+                           <label class="filter__label--checkbox" for="r2">Маски</label>
+                        </li>
+                        <li class="filter__item">
+                           <input class="hidden filter__input" type="checkbox" id="r3" name="faceCare" value="powder">
+                           <label class="filter__label--checkbox" for="r3">Пудра</label>
+                        </li>
+                        <li class="filter__item">
+                           <input class="hidden filter__input" type="checkbox" id="r4" name="faceCare" value="cream" checked>
+                           <label class="filter__label--checkbox" for="r4" >Товар4</label>
+                        </li>
+                        <li class="filter__item">
+                           <input class="hidden filter__input" type="checkbox" id="r5" name="faceCare" value="cream" checked>
+                           <label class="filter__label--checkbox" for="r5" >Товар4</label>
+                        </li>
+                     </ul>   
+                  </div>
+
+                  <div class="filter__item-inner--desktop">
+                     <h4 class="filter__item-title" type="button">Тип кожи</h4>
+                     <ul class="filter__list filter__list--face">
+                        <li class="filter__item">
+                           <input class="hidden filter__input" type="checkbox" id="t1" name="faceCare" value="cream" checked>
+                           <label class="filter__label--checkbox" for="t1">Товар1</label>
+                        </li>
+                        <li class="filter__item">
+                           <input class="hidden filter__input" type="checkbox" id="t2" name="faceCare" value="mask">
+                           <label class="filter__label--checkbox" for="t2">Маски</label>
+                        </li>
+                        <li class="filter__item">
+                           <input class="hidden filter__input" type="checkbox" id="t3" name="faceCare" value="powder">
+                           <label class="filter__label--checkbox" for="t3">Пудра</label>
+                        </li>
+                     </ul>   
                   </div>
                </div>
-                 
-               <div class="filter__item-inner">     
-                  <!-- <div class="filter__item-title body-care accordion-title"> -->
-                     <button class="filter__accordion-btn filter__accordion-btn--closed" type="button">Уход для тела</button>
-                  <!-- </div> -->
-
-                  <div class="filter__content accordion__content">
-                     <ul class="filter__list filter__list--body">
-                        <li class="filter__item">
-                           <input class="hidden filter__input" type="checkbox" id="creamBody0" name="BodyCare" value="cream">
-                           <label class="filter__label--checkbox" for="creamBody0">Крема</label>
-                        </li>
-                        <li class="filter__item">
-                           <input class="hidden filter__input" type="checkbox" id="scrub1" name="BodyCare" value="scrub">
-                           <label class="filter__label--checkbox" for="scrub1">Скраб</label>
-                        </li>
-                        <li class="filter__item">
-                           <input class="hidden filter__input" type="checkbox" id="masc2" name="BodyCare" value="masc">
-                           <label class="filter__label--checkbox" for="masc2">Маски</label>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-
                   <div class="filter__btn-inner">
                      <button class="btn btn__submit filter__btn" type="submit">Применить </button>
-                     <button class="btn btn__reset filter__btn" type="reset">Сброить </button>
-                  </div>
-
-               </div>
+                     <button class="btn btn__reset filter__btn" type="reset">Сбросить </button>
+                  </div> 
             </form>
-            </div>
             </div>
 
             <div class="catalog__inner">
@@ -232,6 +292,46 @@
                         </div>
                         </a>
                      </li>
+                     <li class="catalog__item card">
+                        <a href="">
+                           <picture>
+                              <source media="(min-width: 1199px)" srcset="./images/card_desc4.jpg"> 
+                              <source media="(min-width: 767px)" srcset="./images/card_tab4.jpg">  
+                              <img class="card-img" src="./images/card_mob4.jpg" alt="card_mob1">
+                           </picture>
+                           <div class="card__info-wrap">
+                          <div class="card__info">
+                             <h3 class="card__title">Name4</h3>
+                             <p class="card__price">1290</p>
+                          </div>
+
+                          <div class="card__add-info">
+                             <p class="card__description"> крем для лица</p>
+                             <p class="card__size">50 ml</p>
+                          </div>
+                        </div>
+                        </a>
+                     </li>
+                     <li class="catalog__item card">
+                        <a href="">
+                           <picture>
+                              <source media="(min-width: 1199px)" srcset="./images/card_desc4.jpg"> 
+                              <source media="(min-width: 767px)" srcset="./images/card_tab4.jpg">  
+                              <img class="card-img" src="./images/card_mob4.jpg" alt="card_mob1">
+                           </picture>
+                           <div class="card__info-wrap">
+                          <div class="card__info">
+                             <h3 class="card__title">Name4</h3>
+                             <p class="card__price">1290</p>
+                          </div>
+
+                          <div class="card__add-info">
+                             <p class="card__description"> крем для лица</p>
+                             <p class="card__size">50 ml</p>
+                          </div>
+                        </div>
+                        </a>
+                     </li>
                   </ul>
                </div>
                <div class="pagination">
@@ -265,6 +365,7 @@
          <div class="container">
             <div class="recently-viewed__header section__title">Вы недавно смотрели </div>
             <div class="recently-viewed__inner">
+               <div class="catalog__list-inner">
                <ul class="catalog__list" >
                   <li class="catalog__item card">
                      <a href="">
@@ -286,7 +387,48 @@
                      </div>
                      </a>
                   </li>
+                  <li class="catalog__item card">
+                     <a href="">
+                        <picture>
+                           <source media="(min-width: 1199px)" srcset="./images/card_desc4.jpg"> 
+                           <source media="(min-width: 767px)" srcset="./images/card_tab4.jpg">  
+                           <img class="card-img" src="./images/card_mob4.jpg" alt="card_mob1">
+                        </picture>
+                        <div class="card__info-wrap">
+                       <div class="card__info">
+                          <h3 class="card__title">Name4</h3>
+                          <p class="card__price">1290</p>
+                       </div>
+
+                       <div class="card__add-info">
+                          <p class="card__description"> крем для лица</p>
+                          <p class="card__size">50 ml</p>
+                       </div>
+                     </div>
+                     </a>
+                  </li>
+                  <li class="catalog__item card">
+                     <a href="">
+                        <picture>
+                           <source media="(min-width: 1199px)" srcset="./images/card_desc4.jpg"> 
+                           <source media="(min-width: 767px)" srcset="./images/card_tab4.jpg">  
+                           <img class="card-img" src="./images/card_mob4.jpg" alt="card_mob1">
+                        </picture>
+                        <div class="card__info-wrap">
+                       <div class="card__info">
+                          <h3 class="card__title">Name4</h3>
+                          <p class="card__price">1290</p>
+                       </div>
+
+                       <div class="card__add-info">
+                          <p class="card__description"> крем для лица</p>
+                          <p class="card__size">50 ml</p>
+                       </div>
+                     </div>
+                     </a>
+                  </li>
                </ul>
+            </div>
             </div>
 
             <div class="pagination">
