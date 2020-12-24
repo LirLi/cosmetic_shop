@@ -1034,12 +1034,12 @@ line-height: 140%;
   &::before{
     content: "";
     position: absolute;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     border: 1px solid #CDCDCD;;
     border-radius: 50%;
-    left: 1%;
-    bottom: 15%;
+    left: 25%;
+    bottom: 5% ;
     
   }
 }
