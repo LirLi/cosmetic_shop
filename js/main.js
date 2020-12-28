@@ -2,6 +2,28 @@ let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 let btnTranform = document.querySelector('.header__menu-btn');
 let headerColor = document.querySelector('.header__wrap--opened');
+//открытие меню
+
+// let shareBtn = document.querySelector('.share__btn');
+// let share = document.querySelector('.share-wrap');
+
+// const toggleMenu = () => {
+// 	navMain.classList.toggle('header__wrap--opened');
+// }
+
+// btnTranform.addEventListener('click', btnTranform => {
+// 	btnTranform.stopPropagation();
+//   toggleMenu();
+// });
+
+// document.addEventListener('click', shareBtn => {
+// 	let target = shareBtn.target;
+// 	let share_is_active = share.classList.contains('share-wrap--active');
+	
+// 	if (share_is_active) {
+// 	  toggleMenu();
+// 	}
+//   })
 navToggle.addEventListener ('click', function(){
   if (navMain.classList.contains('main-nav--closed')){
     navMain.classList.remove('main-nav--closed');
