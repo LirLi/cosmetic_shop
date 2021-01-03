@@ -111,6 +111,8 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .btn:hover {
   cursor: pointer;
+  background-color: #F4F1ED;
+  color: #122947;
 }
 
 @media (min-width: 767px) {
@@ -935,10 +937,12 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1199px) {
   .join__wrap {
-    padding: 120px 98px;
+    padding: 120px 0px;
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
             justify-content: stretch;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -1030,6 +1034,13 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1199px) {
+  .contacts__wrap {
+    width: 1170px;
     margin: 0 auto;
   }
 }
@@ -1439,8 +1450,14 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   border: 1px solid #CDCDCD;
   background-color: #000;
-  top: 25%;
-  left: 5%;
+  top: 5%;
+  left: 6%;
+}
+
+@media (min-width: 767px) {
+  .filter__input:checked + .filter__label--checkbox::after {
+    left: 5%;
+  }
 }
 
 .filter__btn {
@@ -1483,7 +1500,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 767px) {
   .catalog__list-inner {
-    width: 900px;
+    width: 700px;
   }
 }
 
@@ -1495,7 +1512,7 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 1400px) {
   .catalog__list-inner {
-    width: 1450px;
+    width: 1380px;
   }
 }
 
@@ -1663,6 +1680,16 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 120px;
 }
 
+@media (min-width: 1199px) {
+  .product__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1070px;
+    margin: 0 auto;
+  }
+}
+
 .product__img-wrap {
   margin-bottom: 50px;
 }
@@ -1670,6 +1697,12 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 .product__img {
   width: 290px;
   margin: 0 auto;
+}
+
+@media (min-width: 767px) {
+  .product__img {
+    width: 678px;
+  }
 }
 
 .product__title {
@@ -1690,6 +1723,12 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .product__description-inner {
   margin-bottom: 35px;
+}
+
+@media (min-width: 1199px) {
+  .product__description-inner {
+    width: 275px;
+  }
 }
 
 .product__description {
@@ -1786,6 +1825,10 @@ p, ul, li, h1, h2, h3, h4, h5, h6 {
 .product .filter__label--checkbox::before {
   left: 0;
   top: 9%;
+}
+
+.product .filter__input:checked + .filter__label--checkbox::after {
+  top: 25%;
 }
 
 .product__price {
