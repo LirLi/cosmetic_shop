@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+   <title>Product</title>
+</head>
+<body>
+   <header class="header header__wrap header__wrap--opened header__wrap--closed">
+
+      <button class="header__menu-btn header__menu-btn--opened header__menu-btn--closed  main-nav__toggle">
+       </button>
+ 
+       
+    </div>
+    <a class="header__logo" href="./index.html">
+       <svg class="header__logo-svg">
+          <use xlink:href="./images/sprite.svg#logo"></use>
+       </svg>
+    </a>
+       <ul class="header__user-nav-list">
+       <li class="header__user-nav-item">
+          <a class="header__user-nav-link header__user-nav-link--user" href="">
+             <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 16C0 14.3834 0.68482 12.8331 1.90381 11.69C3.12279 10.5469 4.77609 9.90476 6.5 9.90476C8.22391 9.90476 9.87721 10.5469 11.0962 11.69C12.3152 12.8331 13 14.3834 13 16H11.375C11.375 14.7876 10.8614 13.6248 9.94715 12.7675C9.03291 11.9102 7.79293 11.4286 6.5 11.4286C5.20707 11.4286 3.96709 11.9102 3.05285 12.7675C2.13861 13.6248 1.625 14.7876 1.625 16H0ZM6.5 9.14286C3.80656 9.14286 1.625 7.09714 1.625 4.57143C1.625 2.04571 3.80656 0 6.5 0C9.19344 0 11.375 2.04571 11.375 4.57143C11.375 7.09714 9.19344 9.14286 6.5 9.14286ZM6.5 7.61905C8.29562 7.61905 9.75 6.25524 9.75 4.57143C9.75 2.88762 8.29562 1.52381 6.5 1.52381C4.70437 1.52381 3.25 2.88762 3.25 4.57143C3.25 6.25524 4.70437 7.61905 6.5 7.61905Z" fill="#122947"/>
+                </svg>
+          </a>
+       </li >
+       <li class="header__user-nav-item" >
+          <a class="header__user-nav-link header__user-nav-link--shop" href="">
+             <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.11111 5.33333V3.80952C3.11111 2.79918 3.52083 1.83021 4.25014 1.11578C4.97945 0.401359 5.9686 0 7 0C8.0314 0 9.02055 0.401359 9.74986 1.11578C10.4792 1.83021 10.8889 2.79918 10.8889 3.80952V5.33333H13.2222C13.4285 5.33333 13.6263 5.41361 13.7722 5.55649C13.9181 5.69938 14 5.89317 14 6.09524V15.2381C14 15.4402 13.9181 15.634 13.7722 15.7768C13.6263 15.9197 13.4285 16 13.2222 16H0.777778C0.571498 16 0.373667 15.9197 0.227806 15.7768C0.0819442 15.634 0 15.4402 0 15.2381V6.09524C0 5.89317 0.0819442 5.69938 0.227806 5.55649C0.373667 5.41361 0.571498 5.33333 0.777778 5.33333H3.11111ZM3.11111 6.85714H1.55556V14.4762H12.4444V6.85714H10.8889V8.38095H9.33333V6.85714H4.66667V8.38095H3.11111V6.85714ZM4.66667 5.33333H9.33333V3.80952C9.33333 3.20331 9.0875 2.62193 8.64992 2.19328C8.21233 1.76463 7.61884 1.52381 7 1.52381C6.38116 1.52381 5.78767 1.76463 5.35008 2.19328C4.9125 2.62193 4.66667 3.20331 4.66667 3.80952V5.33333Z" fill="#122947"/>
+                </svg>
+          </a>
+       </li>
+       </ul>
+       <nav class="main-nav main-nav--opened main-nav--closed">
+          <ul class="main-nav__list">
+             <li class="main-nav__item">
+                <a class="main-nav__link" href="./catalog.html">Каталог</a>
+             </li>
+             <li class="main-nav__item">
+                <a class="main-nav__link" href="">О нас</a>
+             </li>
+             <li class="main-nav__item">
+                <a class="main-nav__link" href="">Контакты</a>
+             </li>
+             
+          </ul>
+ 
+          <ul class="main-nav__social-list social">
+             <li class="social__item">
+                <a href="" class="social__link">
+                   <svg class="social__icon social__icon--fb" width="11" height="18">
+                      <use xlink:href="images/sprite.svg#fb"></use>
+                   </svg>
+                </a>
+             </li>
+             <li class="social__item">
+                <a href="" class="social__link">
+                   <svg class="social__icon ocial__icon--inst"width="20" height="20">
+                      <use xlink:href="images/sprite.svg#inst"></use>
+                   </svg>
+                </a>
+             </li>
+             <li class="social__item">
+                <a href="" class="social__link">
+                   <svg class="social__icon ocial__icon--tw" width="20" height="17">
+                      <use xlink:href="images/sprite.svg#tw"></use>
+                   </svg>
+                </a>
+             </li>
+          </ul>
+       </nav>
+       
+    </header>
+    <section class="product">
+    <div class="container">
+      
+      <div class="product__wrap">
+        
+             <div class="product__img-wrap">
+                <div class="product__img">
+                  <picture>
+                     <source media="(min-width: 1199px)" srcset="./images/prod_desc.jpg">
+                     <source media="(min-width: 767px)" srcset="./images/prod_tab.jpg">  
+                     <img class="about__promocard-img" src="./images/prod_mob.jpg" alt="care_face">
+                  </picture>
+               </div>
+             </div>
+             <div class="product__wrap--desktop">
+             <div class="product__description-wrap">
+                <h3 class="product__title">Rose</h3>
+                <h4 class="product__item">крем для лица</h4>
+                <div class="product__description-inner">
+                <p class="product__description"> Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.</p>
+                <p class="product__description">  Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток.</p>
+                </div>
+             </div>
+             
+             <div class="product__panel">
+               <div class="product__panel-group">
+                  <h3 class="product__panel-title">Состав <span></span></h3>
+                  <p class="product__panel-body">
+                     Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
+                  </p>
+             </div>
+             <div class="product__panel-group">
+               <h3 class="product__panel-title">Способ применения</h3>
+               <p class="product__panel-body">
+                  Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области вокруг глаз. Подходит для дневного и ночного ухода.
+               </p>
+            </div>
+            </div>
+            <form action="https://echo.htmlacademy.ru" method="GET">
+            <div class="product__volume">
+               <p class="product__volume--name">Объем:</p>
+               <ul class="product__volume-list">
+                  <li class="product__volume-item">
+                     <input class="hidden filter__input" type="radio" id="50" name="faceCare" value="cream" checked>
+                     <label class="filter__label--checkbox" for="50" >50ml</label>
+                  </li>
+                  <li class="filter__item">
+                     <input class="hidden filter__input" type="radio" id="30" name="faceCare" value="mask">
+                     <label class="filter__label--checkbox" for="30">30ml</label>
+                  </li>
+               </ul>
+            </div>
+            <div class="product__price">
+               <p class="product__price">890 <span class="rub-icon--product">
+                  <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M2.12195 17V13.7619H0V12.2143H2.12195V10.0952H0V8.28571H2.12195V0H6.70732C8.8374 0 10.4146 0.420635 11.439 1.26191C12.4797 2.10317 13 3.3254 13 4.92857C13 6.54762 12.439 7.81746 11.3171 8.7381C10.1951 9.64286 8.54471 10.0952 6.36585 10.0952H4.31707V12.2143H8.34146V13.7619H4.31707V17H2.12195ZM4.31707 8.28571H6.04878C7.52845 8.28571 8.6748 8.04762 9.4878 7.57143C10.3171 7.09524 10.7317 6.2381 10.7317 5C10.7317 3.92064 10.3902 3.11905 9.70732 2.59524C9.02439 2.07143 7.95935 1.80952 6.51219 1.80952H4.31707V8.28571Z" fill="#122947"/>
+                     </svg>                                 
+                 </span></p>
+                 <button class="product__btn btn" type="submit">Добавить в корзину</button>
+            </div>
+          
+         </form>
+      </div>
+      </div>
+    </section>
+
+    <section class="similar">
+      <div class="container">
+          <h2 class="similar__title">Вам также
+         может понравиться</h2>
+         <div class="catalog__inner">
+            <div class="catalog__list-inner">
+               <ul class="catalog__list" >
+                  <li class="catalog__item card">
+                     <a href="card__link-img">
+                        <picture>
+                           <source media="(min-width: 1199px)" srcset="./images/card_desc1.jpg"> 
+                           <source media="(min-width: 767px)" srcset="./images/card_tab1.jpg">  
+                           <img class="card-img" src="./images/card_mob1.jpg" alt="card_mob1">
+                        </picture>
+                        <div class="card__info-wrap">
+                           <div class="card__info">
+                              <h3 class="card__title">High</h3>
+                              <p class="card__price">990 <span class="rub-icon">
+                               <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M2.12195 17V13.7619H0V12.2143H2.12195V10.0952H0V8.28571H2.12195V0H6.70732C8.8374 0 10.4146 0.420635 11.439 1.26191C12.4797 2.10317 13 3.3254 13 4.92857C13 6.54762 12.439 7.81746 11.3171 8.7381C10.1951 9.64286 8.54471 10.0952 6.36585 10.0952H4.31707V12.2143H8.34146V13.7619H4.31707V17H2.12195ZM4.31707 8.28571H6.04878C7.52845 8.28571 8.6748 8.04762 9.4878 7.57143C10.3171 7.09524 10.7317 6.2381 10.7317 5C10.7317 3.92064 10.3902 3.11905 9.70732 2.59524C9.02439 2.07143 7.95935 1.80952 6.51219 1.80952H4.31707V8.28571Z" fill="#122947"/>
+                                  </svg>                                 
+                              </span></p>
+                           </div>
+                           <div class="card__add-info">
+                              <p class="card__description"> крем для лица</p>
+                              <p class="card__size">50 ml</p>
+                           </div>
+                         </div>
+                     </a>
+                    
+                 
+                    
+                  </li>
+
+                  <li class="catalog__item card">
+                     <a href="">
+                        <picture>
+                           <source media="(min-width: 1199px)" srcset="./images/card_desc2.jpg"> 
+                           <source media="(min-width: 767px)" srcset="./images/card_tab2.jpg">  
+                           <img class="card-img" src="./images/card_mob2.jpg" alt="card_mob2">
+                        </picture>
+                        <div class="card__info-wrap">
+                       <div class="card__info">
+                          <h3 class="card__title">Name2</h3>
+                          <p class="card__price">699</p>
+                       </div>
+
+                       <div class="card__add-info">
+                          <p class="card__description">скраб для лица</p>
+                          <p class="card__size">70 ml</p>
+                       </div>
+                     </div>
+                     </a>
+                  </li>
+
+                  <li class="catalog__item card">
+                     <a href="">
+                        <picture>
+                           <source media="(min-width: 1199px)" srcset="./images/card_desc3.jpg"> 
+                           <source media="(min-width: 767px)" srcset="./images/card_tab3.jpg">  
+                           <img class="card-img" src="./images/card_mob3.jpg" alt="card_mob3">
+                        </picture>
+                     <div class="card__info-wrap">
+                       <div class="card__info">
+                          <h3 class="card__title">Name3</h3>
+                          <p class="card__price">90</p>
+                       </div>
+
+                       <div class="card__add-info">
+                          <p class="card__description"> крем для лица</p>
+                          <p class="card__size">50 ml</p>
+                       </div>
+                     </div>
+                     </a>
+                  </li>
+
+            
+                  <li class="catalog__item card">
+                     <a href="">
+                        <picture>
+                           <source media="(min-width: 1199px)" srcset="./images/card_desc4.jpg"> 
+                           <source media="(min-width: 767px)" srcset="./images/card_tab4.jpg">  
+                           <img class="card-img" src="./images/card_mob4.jpg" alt="card_mob1">
+                        </picture>
+                        <div class="card__info-wrap">
+                       <div class="card__info">
+                          <h3 class="card__title">Name4</h3>
+                          <p class="card__price">1290</p>
+                       </div>
+
+                       <div class="card__add-info">
+                          <p class="card__description"> крем для лица</p>
+                          <p class="card__size">50 ml</p>
+                       </div>
+                     </div>
+                     </a>
+                  </li>
+                  <li class="catalog__item card">
+                     <a href="">
+                        <picture>
+                           <source media="(min-width: 1199px)" srcset="./images/card_desc4.jpg"> 
+                           <source media="(min-width: 767px)" srcset="./images/card_tab4.jpg">  
+                           <img class="card-img" src="./images/card_mob4.jpg" alt="card_mob1">
+                        </picture>
+                        <div class="card__info-wrap">
+                       <div class="card__info">
+                          <h3 class="card__title">Name4</h3>
+                          <p class="card__price">1290</p>
+                       </div>
+
+                       <div class="card__add-info">
+                          <p class="card__description"> крем для лица</p>
+                          <p class="card__size">50 ml</p>
+                       </div>
+                     </div>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="pagination">
+               <div class="pagination__numbers">
+                  <span class="pagination__number">
+                     <a class="pagination__link pagination__link--current" href="">1</a>
+                  </span>
+                  <span class="pagination__number">
+                     <a class="pagination__number-link" href="">8</a>
+                  </span>
+               </div>
+               <div class="pagination__arrow">
+                  <a class="pagination__arrow-link" href="">
+                     <svg>
+                        <use xlink:href="./images/sprite.svg#prev"></use>
+                     </svg>
+                  </a>
+                  <a class="pagination__arrow-link" href="">
+                     <svg>
+                        <use xlink:href="./images/sprite.svg#next"></use>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+
+         </div>
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="footer__nav">
+         <a class="footer__logo" href="">
+            <svg class="footer__logo-img" widht="14" height="14">
+               <use xlink:href="./images/sprite.svg#logo"></use>
+            </svg>
+         </a>
+
+         <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+               <a class="footer__nav-link" href="">Каталог</a>
+            </li>
+            <li class="footer__nav-item">
+               <a class="footer__nav-link" href="">О нас</a>
+            </li>
+            <li class="footer__nav-item">
+               <a class="footer__nav-link" href="">Магазины</a>
+            </li>
+            <li class="footer__nav-item">
+               <a class="footer__nav-link" href="">Контакты</a>
+            </li>
+            
+         </ul>
+
+         <ul class="footer__social-list social">
+            <li class="social__item">
+               <a href="" class="social__link">
+                  <svg class="social__icon social__icon--fb" width="11" height="18">
+                     <use xlink:href="images/sprite.svg#fb"></use>
+                  </svg>
+               </a>
+            </li>
+            <li class="social__item">
+               <a href="" class="social__link">
+                  <svg class="social__icon ocial__icon--inst"width="20" height="20">
+                     <use xlink:href="images/sprite.svg#inst"></use>
+                  </svg>
+               </a>
+            </li>
+            <li class="social__item">
+               <a href="" class="social__link">
+                  <svg class="social__icon ocial__icon--tw" width="20" height="17">
+                     <use xlink:href="images/sprite.svg#tw"></use>
+                  </svg>
+               </a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer__copyright">
+         <div class="footer__copyright-info">
+            <a class="footer__copyright-logo">Maroon</a>
+            <svg class="footer__copyright-icon"  width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M7 0C10.864 0 14 3.136 14 7C14 10.864 10.864 14 7 14C3.136 14 0 10.864 0 7C0 3.136 3.136 0 7 0ZM7 1.4C3.906 1.4 1.4 3.906 1.4 7C1.4 10.094 3.906 12.6 7 12.6C10.094 12.6 12.6 10.094 12.6 7C12.6 3.906 10.094 1.4 7 1.4ZM7 3.5C8.274 3.5 9.3891 4.1811 10.0016 5.1996L8.8018 5.9199C8.61298 5.60507 8.34493 5.34524 8.02438 5.16631C7.70382 4.98739 7.34196 4.89562 6.97488 4.90016C6.6078 4.9047 6.24832 5.00539 5.93229 5.19219C5.61626 5.379 5.35472 5.64538 5.17375 5.96479C4.99278 6.28419 4.8987 6.64546 4.9009 7.01256C4.90309 7.37966 5.00149 7.73978 5.18626 8.057C5.37104 8.37421 5.63575 8.63745 5.95399 8.82046C6.27223 9.00347 6.63289 9.09985 7 9.1C7.36269 9.10024 7.71926 9.00647 8.03492 8.82785C8.35057 8.64922 8.61455 8.39184 8.8011 8.0808L10.0016 8.8004C9.60821 9.45743 9.01015 9.96728 8.29915 10.2517C7.58814 10.5362 6.80345 10.5796 6.06543 10.3752C5.32741 10.1708 4.6768 9.73001 4.2134 9.12033C3.74999 8.51066 3.49938 7.7658 3.5 7C3.5 5.068 5.068 3.5 7 3.5Z" fill="#CDCDCD"/>
+               </svg>
+               <p class="footer__copyright-text footer__year">2020 Все права защищены</p>
+         </div>
+         <a href="" class="footer__copyright-policy">Политика конфиденциальности</a>
+      </div>
+   </footer>
+   <script src="./js/main.js"></script>
+   <script src="./js/product.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="./js/swiper.js"></script>
+</body>
+</html>
